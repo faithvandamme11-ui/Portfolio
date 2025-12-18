@@ -1,17 +1,21 @@
 ﻿body {
-   margin: 0;
-   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-   background-color: ghostwhite;
-   display: flex;
-   flex-direction: column;
-   min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New';
+    background-color: black;
+    background-image: radial-gradient(#1a1a1a 1px, transparent 1px) display: flex;
+    background-size: 20px 20px;
+    color: white;
+    
 }
 
 header{
+    position: sticky;
+    top: 0;
+    z-index: 1000;
     background-color: cadetblue;
-    color: white;
-    padding: 1rem 2rem;
-    box-shadow: 0 2px 5px ghostwhite;
+    padding: 20px 50px;
+    border-bottom: 1px solid #333;
 }
 
 nav{
@@ -42,19 +46,50 @@ nav a{
     transition: color 0.3s;
 }
 
-nav a:hover{
+nav a:hover, nav a.active {
     color: darkblue;
 }
 
-main{
-    flex: 1;
+.hero {
+    height: 60vh;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
+    text-align: center;
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('your-banner-bg.jpg');
+    background-size: cover;
+    background-attachment: fixed;
 }
 
-h1 {
-    color: #2c3e50;
-    border-bottom: 2px solid #3498db;
+.hero h1{
+    font-size: 3rem;
+    letter-spacing: 5px;
 }
+
+.projects-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(3000px, 1fr));
+    gap: 20px;
+    padding: 50px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.project-card{
+    position: relative;
+    border: 1px solid #333;
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+ .project-card:hover {
+        transform: scale(1.02);
+        border-color: #ff4d4d;
+ }
+
+ .project-card img{
+     width: 100%;
+     height: auto;
+     display: block;
+     filter: grayscale(50%);
+ }
