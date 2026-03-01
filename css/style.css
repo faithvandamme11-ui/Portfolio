@@ -3,7 +3,7 @@
     padding: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #f0f4f8;
-    background-image: radial-gradient(#1a1a1a 1px, transparent 1px) display: flex;
+    background-image: radial-gradient(#d1d8e0 1px, transparent 1px);
     background-size: 20px 20px;
     color: #2d3436;
     opacity: 1;
@@ -70,9 +70,10 @@ nav a:hover, nav a.active {
     align-items: center;
     justify-content: center;
     text-align: center;
-    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('your-banner-bg.jpg');
+    background: linear-gradient(rgba(255,255,255,0.2), rgba(255,255,255,0.2)), url('your-banner-bg.jpg');
     background-size: cover;
     background-attachment: fixed;
+    color: #2d3436;
 }
 
 .hero h1{
