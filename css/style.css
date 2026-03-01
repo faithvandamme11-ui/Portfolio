@@ -81,7 +81,7 @@ nav a:hover, nav a.active {
 
 .projects-container{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(3000px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
     padding: 50px;
     max-width: 1200px;
@@ -138,4 +138,33 @@ nav a:hover, nav a.active {
     color: white;
     text-decoration: none;
     border-radius: 50px;
+}
+
+.contact-container, .menu-container{
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px;
+}
+
+@media (max-width: 768px){
+    body{
+        padding: 10px;
+        overflow-x: hidden;
+    }
+    .contact-container, .menu-container{
+        width: 95%;
+        padding: 15px;
+        margin: 10px auto;
+    }
+    nav ul{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+
+    .menu-item{
+        font-size: 0.9rem;
+        word-wrap: break-word;
+    }
 }
