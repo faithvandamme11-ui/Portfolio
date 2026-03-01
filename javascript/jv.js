@@ -24,3 +24,10 @@ function ChangeText() {
     document.getElementById("message").style.color = "red";
 }
 
+function copyEmail() {
+    const email = "faithvandamme11@gmail.com";
+    navigator.clipboard.writeText(email).then(() => {
+        alert("Email copied to clipboard!");
+    });
+}
+

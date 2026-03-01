@@ -106,3 +106,36 @@ nav a:hover, nav a.active {
      display: block;
      filter: grayscale(50%);
  }
+
+.contact-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding-top: 100px;
+}
+
+.contact-card {
+    background: #fff;
+    padding: 40px;
+    border-radius: 20px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 2px solid #eee;
+}
+
+ 
+    .contact-card:hover {
+        transform: translateY(-10px) rotate(2deg);
+        box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        border-color: #ff4757; 
+    }
+
+.contact-btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background: #333;
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+}
